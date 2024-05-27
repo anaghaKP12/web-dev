@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <form action="/signup" method="post">
+     <div class="box">
+        <div class="container">
+            <div class="top-header">
+                {{!-- <span>Have an Account?</span> --}}
+                <header>Sign Up</header>
+            </div>
+            <div class="input-field">
+                <input type="text" class="input" name="name" placeholder="Username" required>
+                {{!-- <i class="bx bx-user"></i> --}}
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" name="password" placeholder="Password" required>
+                {{!-- <i class="bx bx-lock-alt"></i> --}}
+            </div>
+             <div class="input-field">
+                <input type="submit" class="submit" value="Sign Up">
+            </div>
+    {{!-- <h2>Log In</h2>
+
+    <form action="/login" method="post">
+        <input type="text" name = "name" placeholder = "Name">
+        <input type="password" name = "password" placeholder = "Password">
+        <input type="submit">
+    
+    </form> --}}             
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+    {{!-- <h2>Sign Up</h2> --}}
+
+    {{!-- <form action="/signup" method="post">
+        <input type="text" name = "name" placeholder = "Name">
+        <input type="password" name = "password" placeholder = "Password">
+        <input type="submit">
+    
+    </form> --}}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+<form action="/login" method="post">
+     <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <span>Have an Account?</span>
+                <header>Login</header>
+            </div>
+            <div class="input-field">
+                <input type="text" class="input" name="name" placeholder="Username" required>
+                {{!-- <i class="bx bx-user"></i> --}}
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" name="password" placeholder="Password" required>
+                {{!-- <i class="bx bx-lock-alt"></i> --}}
+            </div>
+             <div class="input-field">
+                <input type="submit" class="submit" value="Login">
+            </div>
+    {{!-- <h2>Log In</h2>
+
+    <form action="/login" method="post">
+        <input type="text" name = "name" placeholder = "Name">
+        <input type="password" name = "password" placeholder = "Password">
+        <input type="submit">
+    
+    </form> --}}
+                <div class="bottom">
+                    <a href="/signup">Make a new account</a>
+                </div>
+        </div>
+    </div>
+   </form>
+</body>
+</html>
