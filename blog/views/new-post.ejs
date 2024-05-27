@@ -1,0 +1,16 @@
+<!-- views/new-post.ejs -->
+<form method="POST" action="/admin/add-post">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+    
+    <label for="body">Content:</label>
+    <textarea id="body" name="body" rows="10" cols="50" required></textarea>
+    <label for="createdAt">Created At</label>
+    <input type="date" id="createdAt" name="createdAt" required>
+    <label for="updatedAt">Updated At</label>
+    <input type="date" id="updatedAt" name="updatedAt" required>
+
+    <!-- Add more fields as needed -->
+
+    <button type="submit" class="btn">Publish Post</button>
+</form>

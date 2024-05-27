@@ -1,0 +1,36 @@
+<div class="author">
+    <h1 class="author__heading">QuickPost</h1>
+    <p class="author__body">Instantly share your stories effortlessly!</p>
+</div>
+
+<img src="/img/pencils-762555_1280.jpg" alt="BLOG image" class="blog-image" width="800" height="468">
+
+<section class="articles">
+    <h2 class="articles__heading">Latest Posts</h2>
+
+    <ul class="article-ul">
+
+        <% data.forEach(post => { %>
+         
+        
+        <li>
+            <a href="/post/<%= post._id %>">
+                <span><%= post.title %></span>
+                <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+            </a>
+            <a href="/admin/update-post/<%= post._id %>" class="edit-link">Edit
+            </a>
+            <form method="POST" action="/admin/delete-post/<%= post._id %>" class="delete-form">
+            <button type="submit" class="delete-button">Delete</button>
+            </form>
+        </li>
+
+        <% }) %>
+    </ul>
+
+    <% if (nextPage !== null) { %>
+        <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
+    <% } %>
+    
+
+</section>

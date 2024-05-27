@@ -1,0 +1,14 @@
+
+<form method="POST" action="/admin/update-post/<%= post._id %>">
+    <label for="title">Enter the Title to Update:</label>
+    <input type="text" id="title" name="title" value="<%= post.title %>" required>
+
+    <label for="body">Enter the Content to Update:</label>
+    <textarea id="body" name="body" rows="10" cols="50" required><%= post.body %></textarea>
+    <label for="updatedAt">Updated At</label>
+    <textarea id="updatedAt" name="updatedAt" required><%= post.updatedAt %></textarea>
+
+    <!-- Add more fields as needed -->
+
+    <button type="submit" class="btn">Update Post</button>
+</form>
