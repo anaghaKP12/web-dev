@@ -30,21 +30,7 @@ router.get('',async (req,res)=>{
     }
 
 });
-// router.get('',async (req,res)=>{
-//     const locals = {
-//         title: "NodeJs Blog",
-//         description: "Simple blog created with node js express and mongoDb."
-//     }
 
-//     try{
-//         const data = await Post.find();
-//         res.render('index',{ locals,data });
-
-//     }catch(error){
-//         console.log(error);
-//     }
-
-// });
 
 
 router.get('/post/:id',async (req,res)=>{
