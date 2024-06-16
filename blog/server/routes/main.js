@@ -6,8 +6,8 @@ const Post = require('../models/Post');
 router.get('',async (req,res)=>{
   try{
     const locals = {
-        title: "NodeJs Blog",
-        description: "Simple blog created with node js express and mongoDb."
+        title: "Blog",
+        description: "Blog website created with express,mongo and Node JS"
     }
 
     let perPage=2;
